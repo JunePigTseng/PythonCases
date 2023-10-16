@@ -10,8 +10,6 @@ class stu():
         stu.社會 = int(stuinfo['社會'])
         stu.總和 = stu.國文 + stu.英文 + stu.數學 + stu.自然 + stu.社會
         stu.平均 = stu.總和 / 5
-    def __repr__(self) -> str:
-        print(f"{i.name}的資料")
     def show_info(self):
         print(f"姓名 : {i.name}")
         print(f"國文 : {i.國文}")
