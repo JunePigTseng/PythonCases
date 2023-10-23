@@ -20,7 +20,7 @@ class stu():
         print(f"總和 : {i.總和}")
         print(f"平均 : {i.平均}")
 
-with open("OpenFile/stuscore.csv",newline="",encoding="utf-8") as import_file:
+with open("class/OpenFile/stuscore.csv",newline="",encoding="utf-8") as import_file:
     students = list(csv.DictReader(import_file))
     stu_list = []
     for i in range(len(students)):
@@ -28,3 +28,4 @@ with open("OpenFile/stuscore.csv",newline="",encoding="utf-8") as import_file:
     for i in stu_list:
         print("=============")
         i.show_info()
+    print(students)
